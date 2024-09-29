@@ -3,34 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text to Speech Example</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Happy Birthday Dear Mam</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Text to Speech</h1>
-    <textarea id="text" rows="32" cols="20" style="width: 250px; height: 350px;" placeholder="Type your text here"></textarea><br><br>
-    <button onclick="speak()">Speak</button>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="https://firebasestorage.googleapis.com/v0/b/t2upload.appspot.com/o/images%2FIMG_20240905_104225.jpg?alt=media&token=ba594b25-f653-47cc-903c-0b621272f022" alt="Birthday Girl" class="birthday-img">
+            <h1>Happy Birthday, [Namita Kharanshu]!</h1>
+            <p class="subtext">Wishing you the most beautiful day</p>
+        </div>
+    </section>
 
-    <script>
-        function speak() {
-            // Get the text from the textarea
-            var text = document.getElementById('text').value;
+    <!-- Personal Message Section -->
+    <section class="personal-message">
+        <h2>A Special Message for You</h2>
+        <p>
+            Dear [Mam],<br>
+            आप वह रोशनी हैं जो हर किसी के जीवन को रोशन करती है। आपके विशेष दिन पर, मैं आपको दुनिया की सारी खुशियों की कामना करता हूं, क्योंकि आप वास्तव में इसके हकदार हैं! 
+            यह जन्मदिन आपके लिए उतनी ही खुशी और प्यार लेकर आए जितना आपने अपने आस-पास के सभी लोगों को दिया है।
+        </p>
+    </section>
 
-            // Check if the browser supports speech synthesis
-            if ('speechSynthesis' in window) {
-                var speech = new SpeechSynthesisUtterance(text);
+    <!-- Wishes Section -->
+    <section class="more-wishes">
+        <h2>आपके प्रियजन की ओर से शुभकामनाएं</h2>
+        <div class="wish-card">
+            <p>जन्मदिन मुबारक हो [प्रिय मैम]! आप मेरे सबसे अच्छे शिक्षक हैं, और मैं बहुत भाग्यशाली हूं कि आप मेरे जीवन में आए । आशा है कि यह वर्ष प्यार और सफलता से भरा हो!</p>
+        </div>
+        <div class="wish-card">
+            <p>मेरी खूबसूरत मैम, आपके सभी सपने सच हों! अपने विशेष दिन के हर पल का आनंद लें</p>
+        </div>
+        <div class="wish-card">
+            <p>आपको हँसी, प्यार और सभी अद्भुत चीज़ों से भरे एक शानदार जन्मदिन की शुभकामनाएँ।</p>
+        </div>
+    </section>
 
-                // Optional: Set speech properties like pitch, rate, and voice
-                speech.pitch = 1; // Range is from 0 to 2
-                speech.rate = 1; // Range is from 0.1 to 10
-                speech.voice = speechSynthesis.getVoices()[0]; // Choose the first voice available
-
-                // Speak the text
-                window.speechSynthesis.speak(speech);
-            } else {
-                alert('Sorry, your browser does not support text to speech.');
-            }
-        }
-    </script>
+    <!-- Optional: Background Music -->
+    <audio autoplay loop >
+        <source src="Song.mp3" type="audio/mp3">
+    </audio>
 </body>
 </html>
-
