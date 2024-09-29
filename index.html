@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech Example</title>
+</head>
+<body>
+    <h1>Text to Speech</h1>
+    <textarea id="text" rows="32" cols="20" style="width: 250px; height: 350px;" placeholder="Type your text here"></textarea><br><br>
+    <button onclick="speak()">Speak</button>
+
+    <script>
+        function speak() {
+            // Get the text from the textarea
+            var text = document.getElementById('text').value;
+
+            // Check if the browser supports speech synthesis
+            if ('speechSynthesis' in window) {
+                var speech = new SpeechSynthesisUtterance(text);
+
+                // Optional: Set speech properties like pitch, rate, and voice
+                speech.pitch = 1; // Range is from 0 to 2
+                speech.rate = 1; // Range is from 0.1 to 10
+                speech.voice = speechSynthesis.getVoices()[0]; // Choose the first voice available
+
+                // Speak the text
+                window.speechSynthesis.speak(speech);
+            } else {
+                alert('Sorry, your browser does not support text to speech.');
+            }
+        }
+    </script>
+</body>
+</html>
+

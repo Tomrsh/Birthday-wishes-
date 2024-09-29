@@ -1,0 +1,28 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+div{
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 450px;
+    
+}
+.inputing{
+    border-color: black;
+    border-radius: 4px;
+    margin: 5px;
+    width: 250px;
+    height: 40px;
+}
+button{
+    margin: 7px;
+}
