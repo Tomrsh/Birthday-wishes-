@@ -23,13 +23,14 @@ body {
 }
 
 .hero-content {
+    margin-top:160px;
     animation: fadeIn 2s ease-in-out;
 }
 
 .birthday-img {
     width: 280px;
     height: 380px;
-    
+    margin-top:160px;
     border-radius: 10%;
     border: 4px solid white;
     margin-bottom: 20px;
@@ -126,7 +127,10 @@ body {
     .hero h1 {
         font-size: 2.5em;
     }
-
+    .hero-content {
+    margin-top: 0px;
+    animation: fadeIn 2s ease-in-out;
+    }
     .birthday-img {
         width: 270px;
         height: 340px;
