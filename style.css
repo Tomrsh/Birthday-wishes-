@@ -13,7 +13,7 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    height: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,14 +23,14 @@ body {
 }
 
 .hero-content {
-    margin-top:160px;
+    
     animation: fadeIn 2s ease-in-out;
 }
 
 .birthday-img {
     width: 280px;
     height: 380px;
-    margin-top:160px;
+    
     border-radius: 10%;
     border: 4px solid white;
     margin-bottom: 20px;
