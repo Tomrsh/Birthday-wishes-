@@ -18,7 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('birthday-background.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://firebasestorage.googleapis.com/v0/b/t2upload.appspot.com/o/images%2Ft2-wishbg.jpg?alt=media&token=ed7878e4-5cdb-4943-a817-a69d4e315551') no-repeat center center/cover;
     color: white;
 }
 
