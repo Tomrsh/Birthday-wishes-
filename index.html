@@ -3,51 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Happy Birthday Dear Mam</title>
+    <title>Happy Birthday My Love</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <img src="https://firebasestorage.googleapis.com/v0/b/t2upload.appspot.com/o/images%2FPicsart_24-09-29_16-46-05-512.jpg?alt=media&token=17155b0d-64d0-4f96-a7a0-8629128a08a3" alt="Birthday Girl" class="birthday-img">
-            <h1>Happy Birthday, [Namita Kharanshu]!</h1>
-            <p class="subtext">Wishing you the most beautiful day</p>
-            <audio controls loop>
-        <source src="Song.mp3" type="audio/mp3">
-            </audio>
-        </div>
-        
-    </section>
 
-    <!-- Personal Message Section -->
-    <section class="personal-message">
-        <h2>A Special Message for You</h2>
-        <p>
-            Dear [Mam],<br>
-            आप वह रोशनी हैं जो हर किसी के जीवन को रोशन करती है। आपके विशेष दिन पर, मैं आपको दुनिया की सारी खुशियों की कामना करता हूं, क्योंकि आप वास्तव में इसके हकदार हैं! 
-            यह जन्मदिन आपके लिए उतनी ही खुशी और प्यार लेकर आए जितना आपने अपने आस-पास के सभी लोगों को दिया है।
-        </p>
-    </section>
+    <div class="container">
+        <h1 class="glow">🎉 Happy Birthday My Love! 🎂</h1>
+        <p class="message">Tum meri zindagi ki sabse khoobsurat insan ho ❤️</p>
+        <button onclick="showSurprise()">Click for Surprise 🎁</button>
+        <div class="surprise" id="surprise">
+            <img src="/IMG_20250315_084150.jpg" alt="Love">
+            <p class="special-message">Tum meri duniya ho! 🌍💖</p>
+        </div>
+    </div>
 
-    <!-- Wishes Section -->
-    <section class="more-wishes">
-        <h2>आपके प्रियजन की ओर से शुभकामनाएं</h2>
-        <div class="wish-card">
-            <p>जन्मदिन मुबारक हो [प्रिय मैम]! आप मेरे सबसे अच्छे शिक्षक हैं, और मैं बहुत भाग्यशाली हूं कि आप मेरे जीवन में आए । आशा है कि यह वर्ष प्यार और सफलता से भरा हो!</p>
-        </div>
-        <div class="wish-card">
-            <p>मेरी खूबसूरत मैम, आपके सभी सपने सच हों! अपने विशेष दिन के हर पल का आनंद लें</p>
-        </div>
-        <div class="wish-card">
-            <p>आपको हँसी, प्यार और सभी अद्भुत चीज़ों से भरे इस शानदार जन्मदिन की शुभकामनाएँ।</p>
-        </div>
-    </section>
+    <canvas id="confetti"></canvas>
 
-    <!-- Optional: Background Music -->
-    <audio autoplay loop>
-        <source src="Song.mp3" type="audio/mp3">
+    <audio id="bg-music" loop>
+        <source src="happy-birthday.mp3" type="audio/mp3">
     </audio>
+
+    <script src="script.js"></script>
 </body>
 </html>
