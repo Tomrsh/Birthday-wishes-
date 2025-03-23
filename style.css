@@ -1,1 +1,48 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
 
+h1.glow {
+    font-size: 50px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff7eb3, 0 0 30px #ff7eb3;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #fff; }
+    to { text-shadow: 0 0 20px #ff7eb3, 0 0 30px #ff7eb3; }
+}
+
+button {
+    background: #ff7eb3;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff4f7b;
+}
+
+.surprise {
+    display: none;
+    margin-top: 20px;
+}
+
+.surprise img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.special-message {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
