@@ -54,7 +54,7 @@ function animateConfetti() {
 /* 🎞️ Slow Image Rotation Logic */
 let images = [
   "/IMG_20250315_084653.jpg",
-  "/IMG_20250318_125733.jpg",
+  "https://github.com/Tomrsh/Birthday-wishes-/blob/main/IMG-20250224-WA0032.jpg",
   "/IMG_20250315_084150.jpg",
   "/IMG_20250322_165118.jpg"
 ];
