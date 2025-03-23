@@ -2,6 +2,7 @@ function showSurprise() {
   document.getElementById("surprise").style.display = "block";
   document.getElementById("bg-music").play();
   startConfetti();
+  startImageRotation();
 }
 
 /* 🎊 Confetti Effect */
@@ -48,4 +49,26 @@ function animateConfetti() {
     c.update();
     c.draw();
   });
-      }
+}
+
+/* 🎞️ Slow Image Rotation Logic */
+let images = [
+  "/IMG_20250315_084653.jpg",
+  "/IMG_20250318_125733.jpg",
+  "/IMG_20250315_084150.jpg",
+  "/IMG_20250322_165118.jpg"
+];
+
+let imgIndex = 0;
+
+function startImageRotation() {
+  setInterval(() => {
+    imgIndex = (imgIndex + 1) % images.length;
+    let imgElement = document.getElementById("animatedImage");
+    imgElement.style.opacity = 0;
+    setTimeout(() => {
+      imgElement.src = images[imgIndex];
+      imgElement.style.opacity = 1;
+    }, 1000);
+  }, 5000);
+}
