@@ -4,6 +4,38 @@ body {
     text-align: center;
     padding: 20px;
     color: white;
+    overflow: hidden;
+}
+
+/* 🎈 Floating Balloons */
+.balloon-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.balloon {
+    width: 50px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    bottom: -100px;
+    border-radius: 50%;
+    animation: float 6s linear infinite;
+}
+
+.balloon:nth-child(1) { left: 10%; animation-duration: 8s; background: red; }
+.balloon:nth-child(2) { left: 30%; animation-duration: 6s; background: blue; }
+.balloon:nth-child(3) { left: 50%; animation-duration: 9s; background: yellow; }
+.balloon:nth-child(4) { left: 70%; animation-duration: 7s; background: pink; }
+
+@keyframes float {
+    0% { transform: translateY(0); opacity: 0.5; }
+    100% { transform: translateY(-100vh); opacity: 1; }
 }
 
 h1.glow {
@@ -36,13 +68,52 @@ button:hover {
     margin-top: 20px;
 }
 
-.surprise img {
-    width: 300px;
-    border-radius: 10px;
-}
-
 .special-message {
     font-size: 22px;
     font-weight: bold;
     color: #fff;
+}
+.special-message2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+/* 🌟 Smooth 3D Image Rotation */
+.image-box {
+    width: 200px;
+    height: 250px;
+    perspective: 1000px;
+    margin: auto;
+    position: relative;
+}
+/* 🎊 Confetti Canvas - Ab aur upar visible hoga */
+#confetti {
+    position: fixed;
+    top: 0;
+    left: 5%;
+    width: 95%;
+    height: 95%;/* Pehle kam height thi, ab full screen par hai */
+    pointer-events: none; /* Taaki click par effect na ho */
+    z-index: 2; /* Ab images se upar dikhai dega */
+}
+.image-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    animation: rotate3D 6s ease-in-out infinite alternate;
+    opacity: 0.8;
+}
+
+@keyframes rotate3D {
+    from {
+        transform: rotateY(0deg) scale(0.9);
+        opacity: 0.5;
+    }
+    to {
+        transform: rotateY(360deg) scale(1);
+        opacity: 1;
+    }
 }
