@@ -56,7 +56,7 @@ let images = [
   "https://github.com/Tomrsh/Birthday-wishes-/blob/main/IMG-20250320-WA0009.jpg",
   "https://github.com/Tomrsh/Birthday-wishes-/blob/main/IMG-20250224-WA0032.jpg",
   "https://github.com/Tomrsh/Birthday-wishes-/blob/main/IMG-20250210-WA0030.jpg",
-  "/IMG_20250322_165118.jpg"
+  "https://github.com/Tomrsh/Birthday-wishes-/blob/main/IMG-20250320-WA0012.jpg"
 ];
 
 let imgIndex = 0;
