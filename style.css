@@ -4,7 +4,9 @@ body {
     text-align: center;
     padding: 20px;
     color: white;
-    overflow: hidden;
+    overflow-y: auto;
+    min-height: 100vh;
+    position: relative;
 }
 
 /* 🎈 Floating Balloons */
